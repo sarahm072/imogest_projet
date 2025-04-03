@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
     background: url(./image/background.jpg) no-repeat center center/cover;
     display: flex;
@@ -13,6 +14,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .container {
     background: white;
     padding: 20px;
@@ -20,10 +22,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 400px;
+    max-width: 90%;
 }
-.container h2{
+
+.container h2 {
     margin: 20px;
 }
+
 input, select {
     width: 90%;
     padding: 10px;
@@ -31,6 +36,7 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     background: rgb(0, 63, 131);
     color: white;
@@ -41,10 +47,47 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
 button:hover {
     background: rgb(23, 123, 245);
 }
+
 a {
     color: rgb(0, 53, 128);
     text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 70%;
+    }
+
+    input, select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
 }
