@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Créer un compte</h2>
+        <form action="signup.php" method="POST">
+            <input type="text" name="Phone_num" placeholder="Numéro de téléphone" required>
+            <input type="text" name="Name" placeholder="Nom Complet" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="password" name="Password" placeholder="Mot de passe" required>
+            <select name="Role">
+                <option value="Renter">Locataire</option>
+                <option value="Buyer">Acheteur</option>
+            </select>
+            <button type="submit" onclick="window.location.href='bienvenu.html'">S'inscrire</button>
+        </form>
+        <p>Déjà un membre? <a href="login.html">Se connecter</a></p>
+    </div>
+</body>
+</html>
