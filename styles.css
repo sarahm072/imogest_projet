@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: white;
     min-height: 100vh;
+    margin: 0;
 }
 
 .navbar nav {
@@ -13,7 +14,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .navbar nav ul {
@@ -22,7 +22,6 @@ body {
     padding: 0;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .navbar nav ul li {
@@ -37,17 +36,15 @@ body {
     transition: 0.3s;
 }
 
-.login a {
-    background-color: #004aad;
+ .login a{
+    background-color:#004aad;
     border-radius: 5%;
 }
-
-.login a:hover {
-    background-color: #00275a;
+.login a:hover{
+    background-color:#00275a;
     border-radius: 20%;
     color: #f5f5f5;
 }
-
 .navbar nav ul li a:hover {
     color: #3094e1;
 }
@@ -115,28 +112,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-
-.inscrire {
+.inscrire{
     background-color: #ccc314;
     padding: 20px;
-    text-align: center;
 }
-
-.inscrire button {
-    background-color: #0a4b94;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.inscrire button:hover {
-    background-color: #4f94de;
-}
-
 footer {
     background-color: #0a1f38;
     color: white;
@@ -201,12 +180,29 @@ footer {
     padding-top: 10px;
 }
 
-.contact {
+
+.inscrire{
+    text-align: center;
+}
+.inscrire button {
+    background-color: #0a4b94;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.inscrire button:hover {
+    background-color: #4f94de;
+}
+.contact{
     background-color: white;
     margin: 20px;
     padding: 40px;
-}
 
+}
 .contact .content {
     display: flex;
     flex-wrap: wrap;
@@ -215,13 +211,11 @@ footer {
     max-width: 1000px;
     margin: auto;
 }
-
-.contact .content .message {
-    display: flex;
-    flex-direction: column;
+.contact .content .message{
+   display:flex;
+   flex-direction: column;
 }
-
-.contact .content .message Button {
+.contact .content .message Button{
     background-color: #0a4b94;
     color: white;
     border: none;
@@ -232,11 +226,10 @@ footer {
     border-radius: 5px;
     transition: 0.3s;
 }
-
-.contact .content .message Button:hover {
+.contact .content .message Button:hover{
     background-color: #4f94de;
-}
 
+}
 .contact h2 {
     text-align: center;
     color: #333;
@@ -291,8 +284,7 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-
-.sidebar h2 a {
+.sidebar h2 a{
     text-decoration: none;
     color: white;
 }
@@ -316,10 +308,9 @@ footer {
     align-items: center;
 }
 
-.sidebar nav ul li a:hover {
+.sidebar nav ul li a:hover{
     color: #3094e1;
 }
-
 .content {
     padding: 20px;
     flex-grow: 1;
@@ -343,6 +334,7 @@ h1 span {
     background: #eef2f7;
     border-radius: 5px;
 }
+
 
 .buttons {
     margin-top: 10px;
@@ -377,6 +369,7 @@ h1 span {
     opacity: 0.8;
 }
 
+
 .modal {
     display: none;
     position: fixed;
@@ -399,13 +392,6 @@ h1 span {
     border-radius: 10px;
 }
 
-.modal-content img {
-    width: 100%;
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-}
-
 .close {
     position: absolute;
     top: 10px;
@@ -419,8 +405,7 @@ img {
     max-height: 400px;
     margin-bottom: 10px;
 }
-
-.profil_page {
+.profil_page{
     display: flex;
 }
 
@@ -430,7 +415,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20%;
-    width: 100%;
+    width: 100%; 
     max-width: 600px;
 }
 
@@ -465,6 +450,13 @@ hr {
     color: #555;
 }
 
+.info-row svg {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    fill: #777;
+}
+
 .details {
     padding: 15px;
     margin-top: 20px;
@@ -486,7 +478,28 @@ hr {
     font-size: 16px;
 }
 
-/* ✅ Responsive تحسينات */
+.modify-button svg {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    fill: white;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -494,7 +507,7 @@ hr {
         padding: 10px;
     }
 
-    .navbar nav ul {
+    nav ul {
         flex-direction: column;
         text-align: center;
         gap: 5px;
@@ -507,7 +520,7 @@ hr {
     }
 
     .service div, .features div, .customers-container .box {
-        width: 90%;
+        width: 80%;
     }
 
     .contact .content {
@@ -523,47 +536,40 @@ hr {
         padding: 20px;
     }
 
-    body {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .sidebar nav ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .listings {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .property {
-        width: 90%;
-        max-width: 400px;
-    }
-
-    .profil {
-        width: 95%;
-        margin: auto;
-    }
-
-    .modal-content {
-        width: 90%;
-    }
+        body {
+            flex-direction: column;
+        }
+    
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            text-align: center;
+            padding: 10px 0;
+        }
+    
+        .sidebar nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    
+        .content {
+            margin-left: 0;
+            padding: 10px;
+        }
+    
+        .listings {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .property {
+            width: 90%;
+            max-width: 400px;
+        }
+    
+    
 }
