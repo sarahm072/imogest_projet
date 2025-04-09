@@ -2,7 +2,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: white;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .navbar nav {
@@ -368,7 +371,6 @@ h1 span {
 }
 
 
-/* Styles de la fenêtre modale */
 .modal {
     display: none;
     position: fixed;
@@ -405,9 +407,81 @@ img {
     margin-bottom: 10px;
 }
 
+.profil {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; 
+    max-width: 600px;
+}
 
+.profil h2 {
+    color: #fff;
+    background-color: #0a4b94;
+    padding: 15px;
+    border-radius: 6px 6px 0 0;
+    margin-top: 0;
+    text-align: center;
+}
 
+.informations {
+    padding: 15px;
+}
 
+.profil h4 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info-row svg {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    fill: #777;
+}
+
+.details {
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modify-button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modify-button svg {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    fill: white;
+    vertical-align: middle;
+}
 
 
 
