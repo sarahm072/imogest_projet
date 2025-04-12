@@ -1,5 +1,5 @@
 <?php
-session_start(); // يجب بدء الجلسة
+session_start(); 
 ?>
 
 <!DOCTYPE html>
