@@ -20,7 +20,7 @@ session_start(); // يجب بدء الجلسة
                     <li><a href="#">&#128276; Notifications</a></li>
                     <li><a href="#">&#10084; Favoris</a></li>
                     <li><a href="#">&#128221; Historique</a></li>
-                    <li><a href="logout.php">&#128682; Déconnexion</a></li> <!-- صفحة تسجيل الخروج -->
+                    <li><a href="logout.php">&#128682; Déconnexion</a></li> 
                 </ul>
             </nav>
         </div>
