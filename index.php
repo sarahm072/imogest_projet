@@ -15,7 +15,7 @@
                 <li><a href="#apropos">À Propos</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li ><a href="login.html">Se connecter</a></li>
-                <li class="login"><a href="singup.html">S'inscrire</a></li>
+                <li class="login"><a href="singup.php">S'inscrire</a></li>
             </ul>
         </nav>
     </div>
