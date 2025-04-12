@@ -10,10 +10,10 @@
 <body>
     <div class="page">
         <div class="sidebar">
-            <h2><a href="bienvenu.html">Tableau De Bord</a></h2>
+            <h2><a href="bienvenu.php">Tableau De Bord</a></h2>
             <nav>
                 <ul>
-                    <li><a href="profil.html">&#128100; Profil</a></li>
+                    <li><a href="profil.php">&#128100; Profil</a></li>
                     <li><a href="#">&#128276; Notifications</a></li>
                     <li><a href="#">&#10084; Favoris</a></li>
                     <li><a href="#">&#128221; Historique</a></li>
