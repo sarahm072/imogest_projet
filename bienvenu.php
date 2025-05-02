@@ -1,3 +1,7 @@
+<?php
+session_start(); // يجب بدء الجلسة
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,7 +14,7 @@
 <body>
     <div class="page">
         <div class="sidebar">
-            <h2><a href="bienvenu.php">Tableau De Bord</a></h2>
+            <h2><a href="bienvenu.html">Tableau De Bord</a></h2>
             <nav>
                 <ul>
                     <li><a href="profil.php">&#128100; Profil</a></li>
@@ -22,7 +26,7 @@
             </nav>
         </div>
         <div class="content">
-            <h1>Bienvenue dans votre espace client, <span>User</span></h1>
+            <h1>Bienvenue dans votre espace client, <span><?php echo $_SESSION['name']; ?></span></h1>
             <p>Utilisez le menu à gauche pour naviguer à travers vos fonctionnalités.</p>
             <div class="notifications">
                 <h3>Dernières Notifications</h3>
